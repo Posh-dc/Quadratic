@@ -11,42 +11,43 @@
 <body>
     <div class="main">
         <form class="myForm">
-            <div class="inputs">
-                <div class="inp">
-                    <input type="number" name="a" id="">
-                    <h3>X2</h3>
-                </div>
-                <div class="mid">
-                    <h3>+</h3>
-                </div>
-                <div class="inp">
-                    <input type="number" name="b" id="">
-                    <h3>X</h3>
-                </div>
-                <div class="mid">
-                    <h3>+</h3>
-                </div>
-                <div class="inp">
-                    <input type="number" name="c" id="">
-                </div>
-                <div class="mid">
-                    <h3>=</h3>
-                </div>
-                <div class="inp">
-                    <input type="text" readonly>
-                </div>
+            <div class="header">
+                <h2>Quadratic Equation calculator</h2>
             </div>
-            <div class="resultDiv">
-                <h3>Result</h3>
-                <input type="text" name="" id="result1" readonly>
-                <input type="text" name="" id="result2" readonly>
-            </div>
+
+            <fieldset class="inputs">
+                <legend>ax<sup>2</sup> + bx = c = 0</legend>
+                <input type="text" name="" id="a" placeholder="a" class="inpt">
+                <p style="font-weight: 100;">X<sup>2</sup></p>
+                <p style="font-weight: 900;">+</p>
+                <input type="text" name="" id="b" placeholder="b" class="inpt">
+                <p style="font-weight: 100;">X</p>
+                <p style="font-weight: 900;">+</p>
+                <input type="text" name="" id="c" placeholder="c" class="inpt">
+                <p>=</p>
+                <p>0</p>
+            </fieldset>
             <div class="buttons">
-                <button type="reset">Clear</button>
-                <button class="submit">Submit</button>
+                <button class="clear" type="reset">Clear</button>
+                <button class="submit">Get Result</button>
             </div>
+            <fieldset class="resultDiv">
+                <legend>Equation Results</legend>
+                <div>
+                    <label for="result1">Result1</label>
+                    <input type="text" name="" id="result1" readonly>
+                </div>
+                <h4>OR</h4>
+                <div>
+                    <label for="result2">Result2</label>
+                    <input type="text" name="" id="result2" readonly>
+                </div>
+
+            </fieldset>
+
         </form>
     </div>
+    <div id="prevent"></div>
     <script src="style/index.js"></script>
 </body>
 
