@@ -235,8 +235,8 @@ label {
 
     position: absolute;
     display: none;
-    width: 25rem;
-    height: 25rem;
+    width: 20rem;
+    height: 20rem;
     /* display: flex; */
     flex-direction: column;
     justify-content: space-between;
@@ -258,6 +258,11 @@ label {
 
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.1),
         inset 0 0 8px rgb(255, 255, 255, 0.3);
+}
+
+.error-code,
+.error-message {
+    font-size: 1.5rem;
 }
 
 #prevent1 {
